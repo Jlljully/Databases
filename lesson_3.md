@@ -22,7 +22,7 @@
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/bd3/blob/main/Screenshot_13.png "1")
+![Скрин](https://github.com/Jlljully/Databases/blob/main/files/lesson_3/Screenshot_13.png "1")
 
 ```SQL
 mysql -u admin -p test_db < /backup/test_dump.sql
