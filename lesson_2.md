@@ -9,9 +9,9 @@
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/bd2/blob/main/Untitled.png "2")
+![Скрин](https://github.com/Jlljully/Databases/blob/main/files/lesson_2/Untitled.png "2")
 
-![Скрин](https://github.com/Jlljully/bd2/blob/main/Untitled2.png "2")
+![Скрин](https://github.com/Jlljully/Databases/blob/main/files/lesson_2/Untitled2.png "2")
 
 ## Задача 2
 
@@ -45,9 +45,9 @@
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/bd2/blob/main/Screenshot_7.png "2")
+![Скрин](https://github.com/Jlljully/Databases/blob/main/files/lesson_2/Screenshot_7.png "2")
 
-![Скрин](https://github.com/Jlljully/bd2/blob/main/Screenshot_8.png "2")
+![Скрин](https://github.com/Jlljully/Databases/blob/main/files/lesson_2/Screenshot_8.png "2")
 
 ```
 SELECT table_catalog,table_name,grantee,privilege_type FROM information_schema.table_privileges WHERE table_schema = 'public';
@@ -139,7 +139,7 @@ INSERT INTO clients (Фамилия, "Страна проживания") VALUES
 
 ```
 
-![Скрин](https://github.com/Jlljully/bd2/blob/main/Screenshot_9.png "2")
+![Скрин](https://github.com/Jlljully/Databases/blob/main/files/lesson_2/Screenshot_9.png "2")
 
 
 ## Задача 4
@@ -169,7 +169,7 @@ UPDATE clients SET Заказ = (SELECT id FROM orders WHERE "Наименова
 
 ```
 
-![Скрин](https://github.com/Jlljully/bd2/blob/main/Screenshot_10.png "2")
+![Скрин](https://github.com/Jlljully/Databases/blob/main/files/lesson_2/Screenshot_10.png "2")
 
 ## Задача 5
 
@@ -180,7 +180,7 @@ UPDATE clients SET Заказ = (SELECT id FROM orders WHERE "Наименова
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/bd2/blob/main/Screenshot_11.png "2")  
+![Скрин](https://github.com/Jlljully/Databases/blob/main/files/lesson_2/Screenshot_11.png "2")  
 
 Seq Scan - означает, что используется последовательное, блок за блоком, чтение данных таблицы clients  
 Cost - некая виртуальная величина призванная оценить затратность операции. Первое значение 0.00 — затраты на получение первой строки. Второе — 14.20 — затраты на получение всех строк. Единица измерения cost - «извлечение одной страницы в последовательном (sequential) порядке». То есть оценивается и время, и использование ресурсов.  
